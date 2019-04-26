@@ -163,7 +163,7 @@ curl -o- -L https://raw.githubusercontent.com/lmk123/oh-my-wechat/master/install
 
 打开`应用程序-实用工具-Terminal(终端)`，执行下面的命令安装
 
-`cd ~/Downloads && rm -rf WeChatPlugin-MacOS && git clone https://github.com/TKkk-iOSer/WeChatPlugin-MacOS.git --depth=1 && ./WeChatPlugin-MacOS/Other/Install.sh`
+`cd ~/Downloads && rm -rf WeChatPlugin-MacOS && git clone https://github.com/cuiyu8580/MacWeChatPlugin.git --depth=1 && ./WeChatPlugin-MacOS/Other/Install.sh`
 
 
 #### 2. 普通安装
