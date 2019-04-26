@@ -13,12 +13,10 @@
 #import "TKVersionManager.h"
 #import "NSMenuItem+Action.h"
 #import "TKDownloadWindowController.h"
-#import "TKAboutWindowController.h"
 #import "TKWebServerManager.h"
 
 static char tkAutoReplyWindowControllerKey;         //  自动回复窗口的关联 key
 static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关联 key
-static char tkAboutWindowControllerKey;             //  关于窗口的关联 key
 
 @implementation TKAssistantMenuManager
 
@@ -108,23 +106,16 @@ static char tkAboutWindowControllerKey;             //  关于窗口的关联 ke
                                                           target:self
                                                    keyEquivalent:@""
                                                            state:0];
-    //        关于小助手
-    NSMenuItem *abountPluginItem = [NSMenuItem menuItemWithTitle:TKLocalizedString(@"assistant.menu.aboutAssistant")
-                                                          action:@selector(onAboutPluginControl:)
-                                                          target:self
-                                                   keyEquivalent:@""
-                                                           state:0];
     
     //        关于小助手
     NSMenuItem *pluginItem = [NSMenuItem menuItemWithTitle:TKLocalizedString(@"assistant.menu.other")
-                                                          action:@selector(onAboutPluginControl:)
+                                                          action:nil
                                                           target:self
                                                    keyEquivalent:@""
                                                            state:0];
     NSMenu *subPluginMenu = [[NSMenu alloc] initWithTitle:TKLocalizedString(@"assistant.menu.other")];
     [subPluginMenu addItems:@[enableAlfredItem,
-                             updatePluginItem,
-                             abountPluginItem]];
+                             updatePluginItem]];
     
     NSMenu *subMenu = [[NSMenu alloc] initWithTitle:TKLocalizedString(@"assistant.menu.title")];
 
@@ -336,16 +327,5 @@ static char tkAboutWindowControllerKey;             //  关于窗口的关联 ke
     [[TKWeChatPluginConfig sharedConfig] setCheckUpdateWechatEnable:!item.state];
 }
 
-- (void)onAboutPluginControl:(NSMenuItem *)item {
-    WeChat *wechat = [objc_getClass("WeChat") sharedInstance];
-    TKAboutWindowController *remoteControlWC = objc_getAssociatedObject(wechat, &tkAboutWindowControllerKey);
-    
-    if (!remoteControlWC) {
-        remoteControlWC = [[TKAboutWindowController alloc] initWithWindowNibName:@"TKAboutWindowController"];
-        objc_setAssociatedObject(wechat, &tkAboutWindowControllerKey, remoteControlWC, OBJC_ASSOCIATION_RETAIN);
-    }
-    
-    [remoteControlWC show];
-}
 
 @end

@@ -8,7 +8,7 @@
 
 
 //  菜单栏
-"assistant.menu.title" = "微信小助手";
+"assistant.menu.title" = "微信助手";
 "assistant.menu.revoke" = "开启消息防撤回";
 "assistant.menu.revokeSelf" = "拦截自己撤回消息";
 "assistant.menu.autoReply" = "自动回复设置";
@@ -18,7 +18,7 @@
 "assistant.menu.freeLogin" = "免认证登录";
 "assistant.menu.systemBrowser" = "使用系统浏览器";
 "assistant.menu.forbidCheck" = "禁止微信启动时检测更新";
-"assistant.menu.other" = "小助手🌚";
+"assistant.menu.other" = "微信助手";
 "assistant.menu.enableAlfred" = "开启 Alfred 功能";
 "assistant.menu.updateAssistant" = "更新小助手…";
 "assistant.menu.aboutAssistant" = "关于小助手";

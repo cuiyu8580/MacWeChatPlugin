@@ -65,15 +65,12 @@
 		52B5CF1B1F3B4631000D9DD9 /* TKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B5CF031F3B4631000D9DD9 /* TKHelper.m */; };
 		52CD4C58209C5CA10061A5D6 /* NSWindowController+Action.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C56209C5CA10061A5D6 /* NSWindowController+Action.h */; };
 		52CD4C59209C5CA10061A5D6 /* NSWindowController+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C57209C5CA10061A5D6 /* NSWindowController+Action.m */; };
-		52CD4C5E209CA0510061A5D6 /* TKAboutWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C5B209CA0510061A5D6 /* TKAboutWindowController.h */; };
-		52CD4C5F209CA0510061A5D6 /* TKAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C5C209CA0510061A5D6 /* TKAboutWindowController.m */; };
 		52CD4C7C209ED2300061A5D6 /* TKAutoReplyCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C78209ED22F0061A5D6 /* TKAutoReplyCell.h */; };
 		52CD4C7D209ED2300061A5D6 /* TKAutoReplyContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C79209ED2300061A5D6 /* TKAutoReplyContentView.h */; };
 		52CD4C7E209ED2300061A5D6 /* TKAutoReplyContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C7A209ED2300061A5D6 /* TKAutoReplyContentView.m */; };
 		52CD4C7F209ED2300061A5D6 /* TKAutoReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C7B209ED2300061A5D6 /* TKAutoReplyCell.m */; };
 		52CD4C82209ED23B0061A5D6 /* TKRemoteControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C80209ED23B0061A5D6 /* TKRemoteControlCell.m */; };
 		52CD4C83209ED23B0061A5D6 /* TKRemoteControlCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C81209ED23B0061A5D6 /* TKRemoteControlCell.h */; };
-		52CD4C8420A01CDC0061A5D6 /* TKAboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52CD4C8620A01CDC0061A5D6 /* TKAboutWindowController.xib */; };
 		52CD4C8B20A07D420061A5D6 /* about.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 52CD4C8D20A07D420061A5D6 /* about.rtfd */; };
 		52CD4C9720A0885A0061A5D6 /* MMChatsTableCellView+hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C9120A088590061A5D6 /* MMChatsTableCellView+hook.h */; };
 		52CD4C9820A0885A0061A5D6 /* WeChat+hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C9220A088590061A5D6 /* WeChat+hook.h */; };
@@ -134,7 +131,6 @@
 		527E7F612018711800358D26 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		52810B6921E8FCF500861FC3 /* TKUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKUtility.h; sourceTree = "<group>"; };
 		52810B6A21E8FCF500861FC3 /* TKUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKUtility.m; sourceTree = "<group>"; };
-		52810B6D21E90B2400861FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TKAboutWindowController.xib; sourceTree = "<group>"; };
 		52810B6E21E90B2500861FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TKRemoteControlWindowController.xib; sourceTree = "<group>"; };
 		528B4F921EA7383800BC6A89 /* WeChatPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeChatPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		528B4F951EA7383800BC6A89 /* WeChatPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeChatPlugin.h; sourceTree = "<group>"; };
@@ -156,16 +152,12 @@
 		52B5CF031F3B4631000D9DD9 /* TKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKHelper.m; sourceTree = "<group>"; };
 		52CD4C56209C5CA10061A5D6 /* NSWindowController+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindowController+Action.h"; sourceTree = "<group>"; };
 		52CD4C57209C5CA10061A5D6 /* NSWindowController+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSWindowController+Action.m"; sourceTree = "<group>"; };
-		52CD4C5B209CA0510061A5D6 /* TKAboutWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKAboutWindowController.h; sourceTree = "<group>"; };
-		52CD4C5C209CA0510061A5D6 /* TKAboutWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKAboutWindowController.m; sourceTree = "<group>"; };
 		52CD4C78209ED22F0061A5D6 /* TKAutoReplyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAutoReplyCell.h; sourceTree = "<group>"; };
 		52CD4C79209ED2300061A5D6 /* TKAutoReplyContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKAutoReplyContentView.h; sourceTree = "<group>"; };
 		52CD4C7A209ED2300061A5D6 /* TKAutoReplyContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAutoReplyContentView.m; sourceTree = "<group>"; };
 		52CD4C7B209ED2300061A5D6 /* TKAutoReplyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKAutoReplyCell.m; sourceTree = "<group>"; };
 		52CD4C80209ED23B0061A5D6 /* TKRemoteControlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRemoteControlCell.m; sourceTree = "<group>"; };
 		52CD4C81209ED23B0061A5D6 /* TKRemoteControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRemoteControlCell.h; sourceTree = "<group>"; };
-		52CD4C8520A01CDC0061A5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TKAboutWindowController.xib; sourceTree = "<group>"; };
-		52CD4C8820A07B8E0061A5D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TKAboutWindowController.xib"; sourceTree = "<group>"; };
 		52CD4C8920A07B8E0061A5D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TKRemoteControlWindowController.xib"; sourceTree = "<group>"; };
 		52CD4C8A20A07B8E0061A5D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		52CD4C8C20A07D420061A5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = en; path = en.lproj/about.rtfd; sourceTree = "<group>"; };
@@ -420,22 +412,11 @@
 		52B5CF091F3B4631000D9DD9 /* WindowControllers */ = {
 			isa = PBXGroup;
 			children = (
-				52CD4C5A209CA0380061A5D6 /* About */,
 				5268C514209199690090BE40 /* Download */,
 				522547D61F4C312A00226A2A /* AutoReply */,
 				522547DA1F4C312A00226A2A /* RemoteControl */,
 			);
 			path = WindowControllers;
-			sourceTree = "<group>";
-		};
-		52CD4C5A209CA0380061A5D6 /* About */ = {
-			isa = PBXGroup;
-			children = (
-				52CD4C5B209CA0510061A5D6 /* TKAboutWindowController.h */,
-				52CD4C5C209CA0510061A5D6 /* TKAboutWindowController.m */,
-				52CD4C8620A01CDC0061A5D6 /* TKAboutWindowController.xib */,
-			);
-			path = About;
 			sourceTree = "<group>";
 		};
 		52CD4C75209ED2160061A5D6 /* Views */ = {
@@ -516,7 +497,6 @@
 				522547CF1F4AE5A700226A2A /* NSView+Action.h in Headers */,
 				520AE6F0208E231F00BADE47 /* NotifyConstant.h in Headers */,
 				529950622113DAF10008BEE3 /* TKCacheManager.h in Headers */,
-				52CD4C5E209CA0510061A5D6 /* TKAboutWindowController.h in Headers */,
 				522547E11F4C312A00226A2A /* TKRemoteControlWindowController.h in Headers */,
 				520AE6F3208F62EF00BADE47 /* TKAssistantMenuManager.h in Headers */,
 				526F4D831F4AAC1900E46004 /* TKAutoReplyModel.h in Headers */,
@@ -595,7 +575,6 @@
 				521D75F92080E3670093C820 /* Localizable.strings in Resources */,
 				522547E01F4C312A00226A2A /* TKAutoReplyWindowController.xib in Resources */,
 				52B5CEF21F3B4623000D9DD9 /* TKRemoteControlCommands.plist in Resources */,
-				52CD4C8420A01CDC0061A5D6 /* TKAboutWindowController.xib in Resources */,
 				52B5CEF31F3B4623000D9DD9 /* TKRemoteControlScript.scpt in Resources */,
 				52CD4C8B20A07D420061A5D6 /* about.rtfd in Resources */,
 				521C49C320820662003902E7 /* TKRemoteControlWindowController.xib in Resources */,
@@ -644,7 +623,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52CD4C5F209CA0510061A5D6 /* TKAboutWindowController.m in Sources */,
 				520F200A205E1DF900A36B1E /* TKWebServerManager.m in Sources */,
 				52CD4C9C20A0885A0061A5D6 /* MMChatsTableCellView+hook.m in Sources */,
 				52B5CF151F3B4631000D9DD9 /* TKWeChatPluginConfig.m in Sources */,
@@ -702,16 +680,6 @@
 				52CD4C8A20A07B8E0061A5D6 /* zh-Hant */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		52CD4C8620A01CDC0061A5D6 /* TKAboutWindowController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52CD4C8520A01CDC0061A5D6 /* en */,
-				52CD4C8820A07B8E0061A5D6 /* zh-Hant */,
-				52810B6D21E90B2400861FC3 /* Base */,
-			);
-			name = TKAboutWindowController.xib;
 			sourceTree = "<group>";
 		};
 		52CD4C8D20A07D420061A5D6 /* about.rtfd */ = {
