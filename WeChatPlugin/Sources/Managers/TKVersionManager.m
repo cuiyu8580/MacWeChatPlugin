@@ -45,7 +45,7 @@
 - (void)downloadPluginProgress:(void (^)(NSProgress *downloadProgress))downloadProgressBlock completionHandler:(void (^)(NSString *filePath, NSError * _Nullable error))completionHandler {
     NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
     
-    NSString *pluginName = @"WeChatPlugin-MacOS-master";
+    NSString *pluginName = @"MacWeChatPlugin";
     NSString *pluginPath = [NSString stringWithFormat:@"%@/%@",cachesPath,pluginName];
     NSString *pluginZipPath = [NSString stringWithFormat:@"%@.zip",pluginPath];
     
@@ -53,7 +53,7 @@
     [fileManager removeItemAtPath:pluginPath error:nil];
     [fileManager removeItemAtPath:pluginZipPath error:nil];
     
-    NSString *urlString = @"https://github.com/TKkk-iOSer/WeChatPlugin-MacOS/archive/master.zip";
+    NSString *urlString = @"https://github.com/cuiyu8580/MacWeChatPlugin/archive/master.zip";
     [[TKHTTPManager shareManager] downloadWithUrlString:urlString toDirectoryPah:cachesPath progress:^(NSProgress *downloadProgress) {
         if (downloadProgressBlock) downloadProgressBlock(downloadProgress);
     } completionHandler:^(NSString *filePath, NSError * _Nullable error) {

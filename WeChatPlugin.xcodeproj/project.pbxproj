@@ -71,7 +71,6 @@
 		52CD4C7F209ED2300061A5D6 /* TKAutoReplyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C7B209ED2300061A5D6 /* TKAutoReplyCell.m */; };
 		52CD4C82209ED23B0061A5D6 /* TKRemoteControlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CD4C80209ED23B0061A5D6 /* TKRemoteControlCell.m */; };
 		52CD4C83209ED23B0061A5D6 /* TKRemoteControlCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C81209ED23B0061A5D6 /* TKRemoteControlCell.h */; };
-		52CD4C8B20A07D420061A5D6 /* about.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 52CD4C8D20A07D420061A5D6 /* about.rtfd */; };
 		52CD4C9720A0885A0061A5D6 /* MMChatsTableCellView+hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C9120A088590061A5D6 /* MMChatsTableCellView+hook.h */; };
 		52CD4C9820A0885A0061A5D6 /* WeChat+hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C9220A088590061A5D6 /* WeChat+hook.h */; };
 		52CD4C9920A0885A0061A5D6 /* MMStickerMessageCellView+hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD4C9320A088590061A5D6 /* MMStickerMessageCellView+hook.h */; };
@@ -160,9 +159,6 @@
 		52CD4C81209ED23B0061A5D6 /* TKRemoteControlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRemoteControlCell.h; sourceTree = "<group>"; };
 		52CD4C8920A07B8E0061A5D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hant"; path = "zh-Hant.lproj/TKRemoteControlWindowController.xib"; sourceTree = "<group>"; };
 		52CD4C8A20A07B8E0061A5D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		52CD4C8C20A07D420061A5D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = en; path = en.lproj/about.rtfd; sourceTree = "<group>"; };
-		52CD4C8E20A07D450061A5D6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "zh-Hans"; path = "zh-Hans.lproj/about.rtfd"; sourceTree = "<group>"; };
-		52CD4C8F20A07D460061A5D6 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = "zh-Hant"; path = "zh-Hant.lproj/about.rtfd"; sourceTree = "<group>"; };
 		52CD4C9120A088590061A5D6 /* MMChatsTableCellView+hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMChatsTableCellView+hook.h"; sourceTree = "<group>"; };
 		52CD4C9220A088590061A5D6 /* WeChat+hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeChat+hook.h"; sourceTree = "<group>"; };
 		52CD4C9320A088590061A5D6 /* MMStickerMessageCellView+hook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMStickerMessageCellView+hook.h"; sourceTree = "<group>"; };
@@ -338,7 +334,6 @@
 			isa = PBXGroup;
 			children = (
 				528B4FAA1EA7386D00BC6A89 /* main.mm */,
-				52CD4C8D20A07D420061A5D6 /* about.rtfd */,
 				528B4F951EA7383800BC6A89 /* WeChatPlugin.h */,
 				528B4F961EA7383800BC6A89 /* Info.plist */,
 				52B5CEF11F3B4623000D9DD9 /* TKRemoteControlScript.scpt */,
@@ -576,7 +571,6 @@
 				522547E01F4C312A00226A2A /* TKAutoReplyWindowController.xib in Resources */,
 				52B5CEF21F3B4623000D9DD9 /* TKRemoteControlCommands.plist in Resources */,
 				52B5CEF31F3B4623000D9DD9 /* TKRemoteControlScript.scpt in Resources */,
-				52CD4C8B20A07D420061A5D6 /* about.rtfd in Resources */,
 				521C49C320820662003902E7 /* TKRemoteControlWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -680,16 +674,6 @@
 				52CD4C8A20A07B8E0061A5D6 /* zh-Hant */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		52CD4C8D20A07D420061A5D6 /* about.rtfd */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52CD4C8C20A07D420061A5D6 /* en */,
-				52CD4C8E20A07D450061A5D6 /* zh-Hans */,
-				52CD4C8F20A07D460061A5D6 /* zh-Hant */,
-			);
-			name = about.rtfd;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -813,6 +797,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -835,6 +820,7 @@
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
