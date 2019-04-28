@@ -2,7 +2,7 @@
 
 ![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)  [![release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/TKkk-iOSer/WeChatPlugin-MacOS/releases)  ![support](https://img.shields.io/badge/support-wechat%202.3.24-blue.svg)  [![Readme](https://img.shields.io/badge/readme-english-yellow.svg)](./README_EN.md)   [![GitHub license](https://img.shields.io/github/license/cuiyu8580/MacWeChatPlugin.svg)
 
-# 微信助手 
+# 微信助手 v1.0.0
 ##说明
 
 
@@ -63,7 +63,7 @@
 
 #### 3. 安装完成
 
-* 重启微信，在**菜单栏**中看到**微信小助手**即安装成功。
+* 重启微信，在**菜单栏**中看到**微信助手**即安装成功。
 
 ---
 

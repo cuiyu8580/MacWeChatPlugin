@@ -145,7 +145,7 @@
 		52B5CEF01F3B4623000D9DD9 /* TKRemoteControlCommands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TKRemoteControlCommands.plist; sourceTree = "<group>"; };
 		52B5CEF11F3B4623000D9DD9 /* TKRemoteControlScript.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = TKRemoteControlScript.scpt; sourceTree = "<group>"; };
 		52B5CEF91F3B4631000D9DD9 /* TKWeChatPluginConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKWeChatPluginConfig.h; sourceTree = "<group>"; };
-		52B5CEFA1F3B4631000D9DD9 /* TKWeChatPluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWeChatPluginConfig.m; sourceTree = "<group>"; };
+		52B5CEFA1F3B4631000D9DD9 /* TKWeChatPluginConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKWeChatPluginConfig.m; sourceTree = "<group>"; wrapsLines = 0; };
 		52B5CEFF1F3B4631000D9DD9 /* TKRemoteControlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKRemoteControlModel.h; sourceTree = "<group>"; };
 		52B5CF001F3B4631000D9DD9 /* TKRemoteControlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKRemoteControlModel.m; sourceTree = "<group>"; };
 		52B5CF021F3B4631000D9DD9 /* TKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKHelper.h; sourceTree = "<group>"; };

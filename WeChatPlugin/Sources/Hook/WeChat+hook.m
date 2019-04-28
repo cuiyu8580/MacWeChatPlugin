@@ -28,8 +28,11 @@
     SEL syncBatchAddMsgsMethod = LargerOrEqualVersion(@"2.3.22") ? @selector(FFImgToOnFavInfoInfoVCZZ:isFirstSync:) : @selector(OnSyncBatchAddMsgs:isFirstSync:);
     tk_hookMethod(objc_getClass("MessageService"), syncBatchAddMsgsMethod, [self class], @selector(hook_OnSyncBatchAddMsgs:isFirstSync:));
     //      微信多开
-    SEL hasWechatInstanceMethod = LargerOrEqualVersion(@"2.3.24") ? @selector(FFSvrChatInfoMsgWithImgZZ) : @selector(HasWechatInstance);
+    SEL hasWechatInstanceMethod = LargerOrEqualVersion(@"2.3.22") ? @selector(FFSvrChatInfoMsgWithImgZZ) : @selector(HasWechatInstance);
     tk_hookClassMethod(objc_getClass("CUtility"), hasWechatInstanceMethod, [self class], @selector(hook_HasWechatInstance));
+    
+    tk_hookClassMethod(objc_getClass("NSRunningApplication"), @selector(runningApplicationsWithBundleIdentifier:), [self class], @selector(hook_runningApplicationsWithBundleIdentifier:));
+    
     //      免认证登录
     tk_hookMethod(objc_getClass("MMLoginOneClickViewController"), @selector(onLoginButtonClicked:), [self class], @selector(hook_onLoginButtonClicked:));
     SEL sendLogoutCGIWithCompletionMethod = LargerOrEqualVersion(@"2.3.22") ? @selector(FFVCRecvDataAddDataToMsgChatMgrRecvZZ:) : @selector(sendLogoutCGIWithCompletion:);
@@ -341,6 +344,25 @@
         });
     }
 }
+
++ (NSArray<NSRunningApplication *> *)hook_runningApplicationsWithBundleIdentifier:(NSString *)bundleIdentifier
+{
+    if ([bundleIdentifier isEqualToString:NSBundle.mainBundle.bundleIdentifier])
+    {
+        return @[NSRunningApplication.currentApplication];
+    }
+    else
+    {
+        return [self hook_runningApplicationsWithBundleIdentifier:bundleIdentifier];
+    }
+    
+    
+    
+    
+}
+
+
+
 
 - (void)hook_sortSessions {
     [self hook_sortSessions];

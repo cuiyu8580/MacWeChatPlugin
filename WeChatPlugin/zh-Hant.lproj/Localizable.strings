@@ -20,8 +20,8 @@
 "assistant.menu.forbidCheck" = "禁止微信啟動時檢測更新";
 "assistant.menu.other" = "微信助手";
 "assistant.menu.enableAlfred" = "開啟 Alfred 功能";
-"assistant.menu.updateAssistant" = "更新小助手…";
-"assistant.menu.aboutAssistant" = "關於小助手";
+"assistant.menu.updateAssistant" = "更新微信助手";
+"assistant.menu.aboutAssistant" = "關於微信助手";
 
 //  撤回相關
 "assistant.revokeType.emoji" = "[表情]";
