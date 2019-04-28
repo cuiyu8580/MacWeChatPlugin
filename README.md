@@ -1,10 +1,10 @@
 
 
-![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)  [![release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/cuiyu8580/MacWeChatPlugin/releases)  [![support](https://img.shields.io/badge/support-wechat%202.3.24-blue.svg)](https://mac.weixin.qq.com/?t=mac&lang=zh_CN)
-![GitHub license](https://img.shields.io/github/license/cuiyu8580/MacWeChatPlugin.svg)
+[![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)](https://www.apple.com/macos) [![release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/cuiyu8580/MacWeChatPlugin/releases)  [![support](https://img.shields.io/badge/support-wechat%202.3.24-blue.svg)](https://mac.weixin.qq.com/?t=mac&lang=zh_CN)
+[![GitHub license](https://img.shields.io/github/license/cuiyu8580/MacWeChatPlugin.svg)](http://www.mit.edu)
 
 # 微信助手 v1.0.0
-##说明
+## 说明
 
 
 原有项目 WeChatPlugin-MacOS 的更新，mac微信插件神器。
@@ -43,9 +43,12 @@
 
 ---
 
+## 更新日志
+
+* [适配2.3.24 && 修复微信多开，置底等功能(2019-04-28)](https://github.com/cuiyu8580/MacWeChatPlugin/releases/tag/v1.0.0)
 
 
-
+---
 
 ## 安装
 
