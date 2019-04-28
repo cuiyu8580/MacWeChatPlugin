@@ -58,12 +58,12 @@
 
 打开`应用程序-实用工具-Terminal(终端)`，执行下面的命令安装
 
-`cd ~/Downloads && rm -rf WeChatPlugin-MacOS && git clone https://github.com/cuiyu8580/MacWeChatPlugin.git --depth=1 && ./WeChatPlugin-MacOS/Other/Install.sh`
+`cd ~/Downloads && rm -rf MacWeChatPlugin && git clone https://github.com/cuiyu8580/MacWeChatPlugin.git --depth=1 && ./MacWeChatPlugin/Other/Install.sh`
 
 
 #### 2. 普通安装
 
-* 点击`clone or download`按钮下载 WeChatPlugin 并解压，打开Terminal(终端)，拖动解压后`Install.sh` 文件(在 Other 文件夹中)到 Terminal 回车即可。
+* 点击`clone or download`按钮下载 MacWeChatPlugin 并解压，打开Terminal(终端)，拖动解压后`Install.sh` 文件(在 Other 文件夹中)到 Terminal 回车即可。
 
 #### 3. 安装完成
 
