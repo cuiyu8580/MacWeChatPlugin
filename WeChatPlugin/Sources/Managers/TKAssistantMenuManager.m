@@ -100,14 +100,14 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
                                                    keyEquivalent:@""
                                                            state:[[TKWeChatPluginConfig sharedConfig] alfredEnable]];
 
-    //        更新小助手
+    //        更新微信助手
     NSMenuItem *updatePluginItem = [NSMenuItem menuItemWithTitle:TKLocalizedString(@"assistant.menu.updateAssistant")
                                                           action:@selector(onUpdatePluginControl:)
                                                           target:self
                                                    keyEquivalent:@""
                                                            state:0];
     
-    //        关于小助手
+    //        关于微信助手
     NSMenuItem *pluginItem = [NSMenuItem menuItemWithTitle:TKLocalizedString(@"assistant.menu.other")
                                                           action:nil
                                                           target:self
@@ -177,7 +177,7 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 
 #pragma mark - menuItem 的点击事件
 /**
- 菜单栏-微信小助手-消息防撤回 设置
+ 菜单栏-微信助手-消息防撤回 设置
  
  @param item 消息防撤回的item
  */
@@ -202,7 +202,7 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 }
 
 /**
- 菜单栏-微信小助手-消息防撤回-拦截自己消息 设置
+ 菜单栏-微信助手-消息防撤回-拦截自己消息 设置
  
  @param item 消息防撤回的item
  */
@@ -212,7 +212,7 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 }
 
 /**
- 菜单栏-微信小助手-自动回复 设置
+ 菜单栏-微信助手-自动回复 设置
  
  @param item 自动回复设置的item
  */
@@ -254,7 +254,7 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 }
 
 /**
- 菜单栏-微信小助手-免认证登录 设置
+ 菜单栏-微信助手-免认证登录 设置
  
  @param item 免认证登录的 item
  */
@@ -264,7 +264,7 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 }
 
 /**
- 菜单栏-微信小助手-微信窗口置顶
+ 菜单栏-微信助手-微信窗口置顶
  
  @param item 窗口置顶的 item
  */
@@ -281,9 +281,9 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 }
 
 /**
- 菜单栏-微信小助手-更新小助手
+ 菜单栏-微信助手-更新微信助手
  
- @param item 更新小助手的 item
+ @param item 更新微信助手的 item
  */
 - (void)onUpdatePluginControl:(NSMenuItem *)item {
     [[TKWeChatPluginConfig sharedConfig] setForbidCheckVersion:NO];

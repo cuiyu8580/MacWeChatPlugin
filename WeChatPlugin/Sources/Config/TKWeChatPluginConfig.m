@@ -249,7 +249,7 @@ static NSString * const kTKWeChatRemotePlistPath = @"https://raw.githubuserconte
     return _ignoreSessionPlistFilePath;
 }
 
-#pragma mark - 获取本地 & github 上的小助手 info 信息
+#pragma mark - 获取本地 & github 上的微信助手 info 信息
 - (NSDictionary *)localInfoPlist {
     if (!_localInfoPlist) {
         NSString *localInfoPath = [kTKWeChatResourcesPath stringByAppendingString:@"info.plist"];

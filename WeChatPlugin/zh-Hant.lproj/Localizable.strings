@@ -50,12 +50,12 @@
 //  遠程控制相關
 "assistant.remoteControl.getList" = "獲取指令";
 "assistant.remoteControl.listTip" = "遠程控制指令：\n(功能-指令-是否開啟)\n\n";
-"assistant.remoteControl.recall" = "小助手收到一條指令：";
-"assistant.remoteControl.voiceRecall" = "小助手收到一條語音消息，轉文字後👇👇👇：";
+"assistant.remoteControl.recall" = "微信助手收到一條指令：";
+"assistant.remoteControl.voiceRecall" = "微信助手收到一條語音消息，轉文字後👇👇👇：";
 "assistant.remoteControl.mac" = "macbook控制:";
 "assistant.remoteControl.app" = "app控制:";
 "assistant.remoteControl.neteaseMusic" = "網易雲音樂控制:";
-"assistant.remoteControl.assistant" = "小助手控制:";
+"assistant.remoteControl.assistant" = "微信助手控制:";
 "assistant.remoteControl.open" = "開啟";
 "assistant.remoteControl.close" = "關閉";
 "assistant.remoteControl.contentPlaceHodler" = "請輸入匹配的關鍵詞";
@@ -114,7 +114,7 @@
 "assistant.update.alret.forbid" = "不再提示";
 
 //  下載
-"assistant.download.title" = "更新小助手";
+"assistant.download.title" = "更新微信助手";
 "assistant.download.cancelTitle" = "已取消";
 "assistant.download.install" = "可以開始安裝了";
 "assistant.download.error" = "更新錯誤！";
