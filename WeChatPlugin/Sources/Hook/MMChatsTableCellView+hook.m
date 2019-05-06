@@ -27,7 +27,9 @@
     if ([[TKWeChatPluginConfig sharedConfig] multipleSelectionEnable]) {
         NSMutableArray *selectSessions = [[TKWeChatPluginConfig sharedConfig] selectSessions];
         MMSessionMgr *sessionMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MMSessionMgr")];
-        MMSessionInfo *sessionInfo = [sessionMgr GetSessionAtIndex:arg2];
+
+        
+        MMSessionInfo *sessionInfo = [sessionMgr getSessionAtIndex:arg2];
         if ([selectSessions containsObject:sessionInfo]) {
             [selectSessions removeObject:sessionInfo];
         } else {

@@ -12,6 +12,7 @@
 "assistant.menu.revoke" = "開啟消息防撤回";
 "assistant.menu.revokeSelf" = "攔截自己撤回消息";
 "assistant.menu.autoReply" = "自動回復設置";
+"assistant.menu.voiceTranslate" = "語音自動轉文字";
 "assistant.menu.newWeChat" = "登錄新微信";
 "assistant.menu.remoteControl" = "遠程控制mac";
 "assistant.menu.windowSticky" = "微信窗口置頂";
@@ -29,11 +30,11 @@
 "assistant.revokeType.video" = "[視頻]";
 "assistant.revokeType.voice" = "[語音]";
 "assistant.revokeType.other" = "[非文本]";
-"assistant.revoke.otherMessage.tip" = "TK攔截到一條撤回消息: ";
+"assistant.revoke.otherMessage.tip" = "微信助手攔截到一條撤回消息: ";
 "assistant.revoke.selfMessage.tip" = "你撤回了一條消息: ";
 
 //  免認證相關
-"assistant.autoAuth.tip" = "TK正在為你免認證登錄~";
+"assistant.autoAuth.tip" = "微信助手正在為你免認證登錄~";
 "assistant.autoLogin.text" = "自動登錄";
 
 

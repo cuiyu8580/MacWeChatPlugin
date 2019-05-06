@@ -12,6 +12,7 @@
 "assistant.menu.revoke" = "Prevent Revoke";
 "assistant.menu.revokeSelf" = "Prevent Self Message";
 "assistant.menu.autoReply" = "Auto Reply";
+"assistant.menu.voiceTranslate" = "Voice Translate";
 "assistant.menu.newWeChat" = "New WeChat";
 "assistant.menu.remoteControl" = "Remote Control";
 "assistant.menu.windowSticky" = "Sticky on Top";

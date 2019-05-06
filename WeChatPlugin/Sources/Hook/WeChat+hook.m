@@ -66,6 +66,13 @@
     //    设置标记未读
     tk_hookMethod(objc_getClass("MMChatMessageViewController"), @selector(onClickSession), [self class], @selector(hook_onClickSession));
     tk_hookMethod(objc_getClass("MMSessionMgr"), @selector(onUnReadCountChange:), [self class], @selector(hook_onUnReadCountChange:));
+    
+    tk_hookMethod(objc_getClass("MMChatMessageViewController"), @selector(voiceTranslateDidFinish:), [self class], @selector(hook_voiceTranslateDidFinish:));
+    
+    tk_hookMethod(objc_getClass("MMVoiceMessageCellView"), @selector(onVoiceTranslateStart:), [self class], @selector(hook_onVoiceTranslateStart:));
+    
+    tk_hookMethod(objc_getClass("MMVoiceMessageCellView"), @selector(onVoiceTranslateEnd:), [self class], @selector(hook_onVoiceTranslateEnd:));
+    
 
     //      替换沙盒路径
     rebind_symbols((struct rebinding[2]) {
@@ -214,6 +221,10 @@
             [addMsg.toUserName.string isEqualToString:currentUserName]) {
             [self remoteControlWithMsg:addMsg];
             [self replySelfWithMsg:addMsg];
+        }
+        else
+        {
+            [self VoiceTranslate:addMsg];
         }
     }];
 }
@@ -449,6 +460,36 @@
     }
 }
 
+- (void)hook_voiceTranslateDidFinish:(id)arg1
+{
+    
+    [self hook_voiceTranslateDidFinish:arg1];
+    
+    MMChatMessageViewController *chatMessageVC = (MMChatMessageViewController *)self;
+    
+    [chatMessageVC reloadTableView];
+    
+    
+}
+
+
+- (void)hook_onVoiceTranslateStart:(id)arg1
+{
+    
+    
+    [self hook_onVoiceTranslateStart:arg1];
+    
+}
+
+- (void)hook_onVoiceTranslateEnd:(id)arg1
+{
+    
+    
+    [self hook_onVoiceTranslateEnd:arg1];
+    
+}
+
+
 - (void)hook_onUnReadCountChange:(id)arg1 {
     NSMutableSet *unreadSessionSet = [[TKWeChatPluginConfig sharedConfig] unreadSessionSet];
     if ([unreadSessionSet containsObject:arg1]) {
@@ -537,6 +578,30 @@
     }
 }
 
+
+- (void)VoiceTranslate:(AddMsg *)addMsg
+{
+    if (![[TKWeChatPluginConfig sharedConfig]voiceTranslate]) {
+        return;
+    }
+    else
+    {
+        if (addMsg.msgType == 34)
+        {
+            //      此为语音消息
+            MessageService *msgService = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MessageService")];
+            MessageData *msgData = [msgService GetMsgData:addMsg.fromUserName.string svrId:addMsg.newMsgId];
+            
+            MMVoiceTranslateMgr *VoiceTranslateMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MMVoiceTranslateMgr")];
+
+            [VoiceTranslateMgr doTranslate:msgData];
+        }
+        
+    }
+    
+}
+
+
 /**
  远程控制
  
@@ -550,19 +615,8 @@
     }
     if (addMsg.msgType == 1 || addMsg.msgType == 3) {
         [TKRemoteControlManager executeRemoteControlCommandWithMsg:addMsg.content.string];
-    } else if (addMsg.msgType == 34) {
-        //      此为语音消息
-        MessageService *msgService = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MessageService")];
-        MessageData *msgData = [msgService GetMsgData:addMsg.fromUserName.string svrId:addMsg.newMsgId];
-        long long mesSvrID = msgData.mesSvrID;
-        NSString *sessionName = msgData.fromUsrName;
-        [msgService TranscribeVoiceMessage:msgData completion:^ {
-            MessageData *callbackMsgData = [msgService GetMsgData:sessionName svrId:mesSvrID];
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [TKRemoteControlManager executeRemoteControlCommandWithVoiceMsg:callbackMsgData.msgVoiceText];
-            });
-        }];
     }
+    
 }
 
 - (void)replySelfWithMsg:(AddMsg *)addMsg {

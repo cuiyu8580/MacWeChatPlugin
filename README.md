@@ -1,9 +1,9 @@
 
 
-[![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)](https://www.apple.com/macos) [![release](https://img.shields.io/badge/release-v1.0.0-brightgreen.svg)](https://github.com/cuiyu8580/MacWeChatPlugin/releases)  [![support](https://img.shields.io/badge/support-wechat%202.3.24-blue.svg)](https://mac.weixin.qq.com/?t=mac&lang=zh_CN)
+[![platform](https://img.shields.io/badge/platform-macos-lightgrey.svg)](https://www.apple.com/macos) [![release](https://img.shields.io/badge/release-v1.0.1-brightgreen.svg)](https://github.com/cuiyu8580/MacWeChatPlugin/releases)  [![support](https://img.shields.io/badge/support-wechat%202.3.24-blue.svg)](https://mac.weixin.qq.com/?t=mac&lang=zh_CN)
 [![GitHub license](https://img.shields.io/github/license/cuiyu8580/MacWeChatPlugin.svg)](./LICENSE)
 
-# 微信助手 v1.0.0
+# 微信助手 v1.0.1
 ## 说明
 
 
@@ -16,8 +16,9 @@
 ## 功能
 * 消息自动回复
 * 消息防撤回
-* 远程控制(已支持语音)
-* ~~微信多开~~
+* 语音消息自动翻译
+* 远程控制
+* 微信多开
 * 第二次登录免认证
 * 聊天置底功能(~~类似置顶~~)
 * 微信窗口置顶
@@ -45,6 +46,7 @@
 
 ## 更新日志
 
+* [新增语音消息自动翻译，修复一堆BUG(2019-05-06)](https://github.com/cuiyu8580/MacWeChatPlugin/releases/tag/v1.0.1)
 * [适配2.3.24 && 修复微信多开，置底等功能(2019-04-28)](https://github.com/cuiyu8580/MacWeChatPlugin/releases/tag/v1.0.0)
 
 

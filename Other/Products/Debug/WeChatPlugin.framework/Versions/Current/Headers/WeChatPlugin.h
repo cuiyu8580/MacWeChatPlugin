@@ -56,6 +56,9 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 - (id)GetMsgData:(id)arg1 svrId:(long)arg2;
 - (void)AddLocalMsg:(id)arg1 msgData:(id)arg2;
 - (void)TranscribeVoiceMessage:(id)arg1 completion:(void (^)(void))arg2;
+
+- (void)TranslateMsg:(id)arg1 withCompletion:(void (^)(void))arg2;
+
 - (BOOL)ClearUnRead:(id)arg1 FromID:(unsigned int)arg2 ToID:(unsigned int)arg3;
 - (BOOL)ClearUnRead:(id)arg1 FromCreateTime:(unsigned int)arg2 ToCreateTime:(unsigned int)arg3;
 - (BOOL)hasMsgInChat:(id)arg1;
@@ -210,7 +213,9 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 
 @interface MMSessionMgr : NSObject
 @property(retain, nonatomic) NSMutableArray *m_arrSession;
-- (id)GetSessionAtIndex:(unsigned long long)arg1;
+
+- (id)getSessionAtIndex:(unsigned long long)arg1;
+
 - (id)sessionInfoByUserName:(id)arg1;
 - (void)muteSessionByUserName:(id)arg1;
 - (void)onUnReadCountChange:(id)arg1;
@@ -235,9 +240,35 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 - (void)userNotificationCenter:(id)arg1 didActivateNotification:(id)arg2;
 @end
 
+
+@interface MMTableView : NSTableView
+
+
+@end
+
 @interface MMChatMessageViewController : NSViewController
+@property(nonatomic) __weak MMTableView *messageTableView;
+
 @property(retain, nonatomic) WCContactData *chatContact;
 - (void)onClickSession;
+
+- (void)voiceTranslateDidFinish:(id)arg1;
+
+- (void)reloadTableView;
+
+@end
+
+@interface MMVoiceMessageCellView : NSTableCellView
+
+@property(nonatomic) BOOL isTranslatingVoiceToText;
+
+- (void)translate;
+
+- (void)onVoiceTranslateEnd:(id)arg1;
+
+- (void)onVoiceTranslateStart:(id)arg1;
+
+
 @end
 
 @interface MMMessageTableItem : NSObject
@@ -264,6 +295,18 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 - (void)setAppStickerToastViewDelegate:(id)arg1;
 @end
 
+@interface MMVoiceTranslateMgr : NSObject
+{
+    BOOL _m_isStop;
+    NSMutableArray *_m_taskArray;
+    NSRecursiveLock *_m_lock;
+    NSMutableArray *_m_msgWrapArray;
+    NSMutableArray *_m_cgiArray;
+}
+//语音翻译为文字
+- (void)doTranslate:(id)arg1;
+
+@end
 @interface MMComplexContactSearchTaskMgr : NSObject
 + (id)sharedInstance;
 - (void)doComplexContactSearch:(id)arg1 searchScene:(unsigned long long)arg2 complete:(void (^)(NSString *,NSArray *, NSArray *, NSArray *,id))arg3 cancelable:(BOOL)arg4;

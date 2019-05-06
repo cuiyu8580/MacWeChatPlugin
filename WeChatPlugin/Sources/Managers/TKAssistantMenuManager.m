@@ -55,6 +55,13 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
                                                        target:self
                                                 keyEquivalent:@"k"
                                                         state:[[TKWeChatPluginConfig sharedConfig] autoReplyEnable]];
+    //        语音转文字
+    NSMenuItem *VoiceTranslate = [NSMenuItem menuItemWithTitle:TKLocalizedString(@"assistant.menu.voiceTranslate")
+                                                       action:@selector(onVoiceTranslate:)
+                                                       target:self
+                                                keyEquivalent:@"A"
+                                                        state:[[TKWeChatPluginConfig sharedConfig] voiceTranslate]];
+    
     //        登录新微信
     NSMenuItem *newWeChatItem = [NSMenuItem menuItemWithTitle:TKLocalizedString(@"assistant.menu.newWeChat")
                                                        action:@selector(onNewWechatInstance:)
@@ -121,6 +128,7 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
 
     [subMenu addItems:@[preventRevokeItem,
                         autoReplyItem,
+                        VoiceTranslate,
                         commandItem,
                         newWeChatItem,
                         onTopItem,
@@ -226,6 +234,18 @@ static char tkRemoteControlWindowControllerKey;     //  远程控制窗口的关
     }
     [autoReplyWC show];
 }
+
+/**
+ 菜单栏-微信助手-语音转文字 设置
+ 
+ @param item 语音转文字的item
+ */
+- (void)onVoiceTranslate:(NSMenuItem *)item {
+    item.state = !item.state;
+    [[TKWeChatPluginConfig sharedConfig] setVoiceTranslate:item.state];
+}
+
+
 
 /**
  打开新的微信

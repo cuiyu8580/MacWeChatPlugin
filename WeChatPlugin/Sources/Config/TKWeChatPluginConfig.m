@@ -15,6 +15,7 @@
 static NSString * const kTKPreventRevokeEnableKey = @"kTKPreventRevokeEnableKey";
 static NSString * const kTKPreventSelfRevokeEnableKey = @"kTKPreventSelfRevokeEnableKey";
 static NSString * const kTKAutoReplyEnableKey = @"kTKAutoReplyEnableKey";
+static NSString * const kTKVoiceTranslateKey = @"kTKVoiceTranslateKey";
 static NSString * const kTKAutoAuthEnableKey = @"kTKAutoAuthEnableKey";
 static NSString * const kTKAutoLoginEnableKey = @"kTKAutoLoginEnableKey";
 static NSString * const kTKOnTopKey = @"kTKOnTopKey";
@@ -79,6 +80,12 @@ static NSString * const kTKWeChatRemotePlistPath = @"https://raw.githubuserconte
 - (void)setAutoReplyEnable:(BOOL)autoReplyEnable {
     _autoReplyEnable = autoReplyEnable;
     [[NSUserDefaults standardUserDefaults] setBool:autoReplyEnable forKey:kTKAutoReplyEnableKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)setVoiceTranslate:(BOOL)VoiceTranslate {
+    _voiceTranslate = VoiceTranslate;
+    [[NSUserDefaults standardUserDefaults] setBool:VoiceTranslate forKey:kTKAutoReplyEnableKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
