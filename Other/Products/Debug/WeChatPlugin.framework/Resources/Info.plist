@@ -41,6 +41,6 @@
 	<key>showUpdateWindow</key>
 	<true/>
 	<key>versionInfo</key>
-	<string>v1.0.1 新增语音消息自动翻译，修复一堆BUG \n v1.0.0  适配2.3.24 &amp;&amp; 修复微信多开，置底等功能(2019-04-28)</string>
+	<string>👉🏼v1.0.1(2019-05-06)\n 新增语音消息自动翻译，修复一堆BUG \n👉🏼v1.0.0(2019-04-28)\n适配2.3.24 &amp;&amp; 修复微信多开，置底等功能</string>
 </dict>
 </plist>

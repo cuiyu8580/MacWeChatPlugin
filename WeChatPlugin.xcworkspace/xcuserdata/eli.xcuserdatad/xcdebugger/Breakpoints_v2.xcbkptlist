@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatPlugin/Sources/Config/TKWeChatPluginConfig.m"
-            timestampString = "578228253.508957"
+            timestampString = "578833175.177896"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "273"
@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatPlugin/Sources/Config/TKWeChatPluginConfig.m"
-            timestampString = "578228253.5091569"
+            timestampString = "578833175.177954"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "271"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatPlugin/Sources/Config/TKWeChatPluginConfig.m"
-            timestampString = "578228253.5092061"
+            timestampString = "578833175.177995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "269"
@@ -144,38 +144,6 @@
             startingLineNumber = "34"
             endingLineNumber = "34"
             landmarkName = "+hookWeChat"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WeChatPlugin/Sources/Managers/TKVersionManager.m"
-            timestampString = "578832514.647652"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "-checkVersionFinish:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WeChatPlugin/Sources/Managers/TKVersionManager.m"
-            timestampString = "578832517.05215"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-checkVersionFinish:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
