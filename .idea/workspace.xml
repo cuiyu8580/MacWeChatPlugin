@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6476ffb-08d6-428a-ac19-a8cf67965aa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Headers/WeChatPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Headers/WeChatPlugin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Resources/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Resources/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/A/Headers/WeChatPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/A/Headers/WeChatPlugin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/A/Resources/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/A/Resources/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/A/WeChatPlugin" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/A/WeChatPlugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/Current/Headers/WeChatPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/Current/Headers/WeChatPlugin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/Current/Resources/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/Current/Resources/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/Current/WeChatPlugin" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/Versions/Current/WeChatPlugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/WeChatPlugin" beforeDir="false" afterPath="$PROJECT_DIR$/Other/Products/Debug/WeChatPlugin.framework/WeChatPlugin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatPlugin.xcworkspace/xcuserdata/eli.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatPlugin.xcworkspace/xcuserdata/eli.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatPlugin/Sources/Hook/WeChat+hook.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatPlugin/Sources/Hook/WeChat+hook.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatPlugin/Sources/Managers/TKMessageManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatPlugin/Sources/Managers/TKMessageManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatPlugin/Sources/Managers/TKMessageManager.m" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatPlugin/Sources/Managers/TKMessageManager.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeChatPlugin/WeChatPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/WeChatPlugin/WeChatPlugin.h" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-18" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="811" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MacWeChatPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MacWeChatPlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MacWeChatPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MacWeChatPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="Other" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MacWeChatPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MacWeChatPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="Pods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MacWeChatPlugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MacWeChatPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="WeChatPlugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6476ffb-08d6-428a-ac19-a8cf67965aa9" name="Default Changelist" comment="" />
+      <created>1561464385926</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561464385926</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3297568" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Run" />
+      <window_info anchor="bottom" id="Debug" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

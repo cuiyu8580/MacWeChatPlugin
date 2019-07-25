@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0.0</string>
+	<string>1.0.2</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
@@ -27,20 +27,20 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>10E1001</string>
+	<string>10G8</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>18E219</string>
+	<string>18G74</string>
 	<key>DTSDKName</key>
 	<string>macosx10.14</string>
 	<key>DTXcode</key>
-	<string>1020</string>
+	<string>1030</string>
 	<key>DTXcodeBuild</key>
-	<string>10E1001</string>
+	<string>10G8</string>
 	<key>showUpdateWindow</key>
 	<true/>
 	<key>versionInfo</key>
-	<string>👉🏼v1.0.1(2019-05-06)\n 新增语音消息自动翻译，修复一堆BUG \n👉🏼v1.0.0(2019-04-28)\n适配2.3.24 &amp;&amp; 修复微信多开，置底等功能</string>
+	<string>👉🏼v1.0.2(2019-07-25)\n 适配微信v2.3.26 \n👉🏼v1.0.1(2019-05-06)\n 新增语音消息自动翻译，修复一堆BUG \n👉🏼v1.0.0(2019-04-28)\n适配2.3.24 &amp;&amp; 修复微信多开，置底等功能</string>
 </dict>
 </plist>

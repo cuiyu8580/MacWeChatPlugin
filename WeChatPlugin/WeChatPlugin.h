@@ -71,6 +71,12 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 - (id)getService:(Class)arg1;
 @end
 
+@interface MMFriendRequestMgr : NSObject
+
+- (BOOL)clearUnreadForUserName:(id)arg1;
+
+@end
+
 @interface SKBuiltinString_t : NSObject
 @property(retain, nonatomic, setter=SetString:) NSString *string; // @synthesize string;
 @end
@@ -228,6 +234,7 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 - (void)sortSessions;
 - (void)FFDataSvrMgrSvrFavZZ;
 - (id)getContact:(id)arg1;
+- (id)getSessionContact:(id)arg1;//>=2.3.26
 @end
 
 @interface LogoutCGI : NSTableCellView
@@ -251,6 +258,10 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 
 @property(retain, nonatomic) WCContactData *chatContact;
 - (void)onClickSession;
+
+- (void)unreadTipsDidClicked;
+
+- (void)relayoutUnreadTips;
 
 - (void)voiceTranslateDidFinish:(id)arg1;
 
@@ -433,6 +444,26 @@ FOUNDATION_EXPORT const unsigned char WeChatPluginVersionString[];
 
 @interface MMCDNDownloadMgr : NSObject
 - (BOOL)downloadImageWithMessage:(id)arg1;
+@end
+
+
+@protocol MMVoiceTranslateExt <NSObject>
+- (void)onVoiceTranslateEnd:(MessageData *)arg1;
+- (void)onVoiceTranslateStart:(MessageData *)arg1;
+@end
+
+@interface LazyExtensionAgent :NSObject
+
+- (void)ensureLazyListenerInitedForExtension:(id)arg1 withSelector:(SEL)arg2;
+
+@end
+
+
+@interface MMVoiceTranscribeCGI : NSObject
+
+- (void)transcribeVoiceMessage:(id)arg1 withCompletion:(void (^)(void))arg2;
+
+
 @end
 
 @interface MMMessageVideoService : NSObject

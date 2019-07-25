@@ -18,11 +18,11 @@
     tk_hookMethod(objc_getClass("MMChatsTableCellView"), @selector(setSessionInfo:), [self class], @selector(hook_setSessionInfo:));
     tk_hookMethod(objc_getClass("MMChatsTableCellView"), @selector(contextMenuSticky:), [self class], @selector(hook_contextMenuSticky:));
     tk_hookMethod(objc_getClass("MMChatsTableCellView"), @selector(contextMenuDelete:), [self class], @selector(hook_contextMenuDelete:));
-    tk_hookMethod(objc_getClass("MMChatsViewController"), @selector(tableView:rowGotMouseDown:), [self class], @selector(hooktableView:rowGotMouseDown:));
+    tk_hookMethod(objc_getClass("MMChatsViewController"), @selector(tableView:rowGotMouseDown:), [self class], @selector(hook_tableView:rowGotMouseDown:));
 }
 
-- (void)hooktableView:(NSTableView *)arg1 rowGotMouseDown:(long long)arg2 {
-    [self hooktableView:arg1 rowGotMouseDown:arg2];
+- (void)hook_tableView:(NSTableView *)arg1 rowGotMouseDown:(long long)arg2 {
+    [self hook_tableView:arg1 rowGotMouseDown:arg2];
     
     if ([[TKWeChatPluginConfig sharedConfig] multipleSelectionEnable]) {
         NSMutableArray *selectSessions = [[TKWeChatPluginConfig sharedConfig] selectSessions];

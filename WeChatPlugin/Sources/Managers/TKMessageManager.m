@@ -48,6 +48,23 @@
     }
 }
 
+
+- (void)autoClearMessgaeUnRead:(id)arg1{
+    
+    
+    MMFriendRequestMgr *FriendMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MMFriendRequestMgr")];
+    
+    if ([FriendMgr respondsToSelector:@selector(clearUnreadForUserName:)])
+   {
+       [FriendMgr clearUnreadForUserName:arg1];
+    }
+    
+    
+    
+    
+}
+
+
 - (NSString *)getMessageContentWithData:(MessageData *)msgData {
     if (!msgData) return @"";
     

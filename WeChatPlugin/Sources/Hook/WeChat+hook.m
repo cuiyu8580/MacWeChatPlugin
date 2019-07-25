@@ -71,7 +71,12 @@
     
     tk_hookMethod(objc_getClass("MMVoiceMessageCellView"), @selector(onVoiceTranslateStart:), [self class], @selector(hook_onVoiceTranslateStart:));
     
+    
+    //tk_hookMethod(objc_getClass("MMVoiceTranscribeCGI"), @selector(transcribeVoiceMessage:withCompletion:), [self class], @selector(hook_transcribeVoiceMessage:withCompletion:));
+    
+    
     tk_hookMethod(objc_getClass("MMVoiceMessageCellView"), @selector(onVoiceTranslateEnd:), [self class], @selector(hook_onVoiceTranslateEnd:));
+    
     
 
     //      替换沙盒路径
@@ -467,25 +472,33 @@
     
     MMChatMessageViewController *chatMessageVC = (MMChatMessageViewController *)self;
     
+    [[TKMessageManager shareManager] autoClearMessgaeUnRead:chatMessageVC.chatContact.m_nsUsrName];
+    
     [chatMessageVC reloadTableView];
     
     
 }
 
-
-- (void)hook_onVoiceTranslateStart:(id)arg1
+- (void)hook_transcribeVoiceMessage:(MessageData *)arg1 withCompletion:(void (^)(void))arg2
 {
     
-    
-    [self hook_onVoiceTranslateStart:arg1];
-    
-}
+    MessageService *msgService = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MessageService")];
 
-- (void)hook_onVoiceTranslateEnd:(id)arg1
-{
+    long long mesSvrID = arg1.mesSvrID;
+    NSString *sessionName = arg1.fromUsrName;
     
     
-    [self hook_onVoiceTranslateEnd:arg1];
+
+    [self hook_transcribeVoiceMessage:arg1 withCompletion:^{
+       
+        
+      MessageData *callbackMsgData = [msgService GetMsgData:sessionName svrId:mesSvrID];
+        
+        
+        NSLog(@"========%@",callbackMsgData);
+        
+    }];
+    
     
 }
 
@@ -521,7 +534,18 @@
     NSString *userName = addMsg.fromUserName.string;
     
     MMSessionMgr *sessionMgr = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MMSessionMgr")];
-    WCContactData *msgContact = [sessionMgr getContact:userName];
+    
+    WCContactData *msgContact = nil;
+    
+    if (LargerOrEqualVersion(@"2.3.26"))
+    {
+        msgContact = [sessionMgr getSessionContact:userName];
+    }
+    else
+    {
+         msgContact = [sessionMgr getContact:userName];
+    }
+    
     if ([msgContact isBrandContact] || [msgContact isSelf]) {
         //        该消息为公众号或者本人发送的消息
         return;
@@ -615,6 +639,33 @@
     }
     if (addMsg.msgType == 1 || addMsg.msgType == 3) {
         [TKRemoteControlManager executeRemoteControlCommandWithMsg:addMsg.content.string];
+    }else if (addMsg.msgType == 34) {
+        //      此为语音消息
+        
+       MMVoiceTranscribeCGI *voiceCGI = [[objc_getClass("MMVoiceTranscribeCGI") alloc] init];
+        
+        MessageService *msgService = [[objc_getClass("MMServiceCenter") defaultCenter] getService:objc_getClass("MessageService")];
+        MessageData *msgData = [msgService GetMsgData:addMsg.fromUserName.string svrId:addMsg.newMsgId];
+        long long mesSvrID = msgData.mesSvrID;
+        NSString *sessionName = msgData.fromUsrName;
+        
+        
+        [voiceCGI transcribeVoiceMessage:msgData withCompletion:nil];
+        
+        [voiceCGI transcribeVoiceMessage:msgData withCompletion:^{
+            
+        MessageData *callbackMsgData = [msgService GetMsgData:sessionName svrId:mesSvrID];
+
+            NSLog(@"======");
+            
+        }];
+        
+//        [msgService TranscribeVoiceMessage:msgData completion:^ {
+//            MessageData *callbackMsgData = [msgService GetMsgData:sessionName svrId:mesSvrID];
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [TKRemoteControlManager executeRemoteControlCommandWithVoiceMsg:callbackMsgData.msgVoiceText];
+//            });
+//        }];
     }
     
 }
